@@ -1,10 +1,10 @@
-## **ReflectionRemover: Automatic Reflection Removal in Images**
+## **Deflect: Automatic Reflection Removal in Images**
 
 > This is the final project proposal for CS2364 - Computational Photography and Graphics (Spring 2024)
 
 ## Summary:
 
-ReflectionRemover (RR) intends to be a tool for removing reflection from uploaded images.This project leverages both traditional image processing techniques, such as averaging and filtering, and advanced deep learning models to identify and subtract reflection components from images.
+Deflect intends to be a tool for removing reflection from uploaded images.This project leverages both traditional image processing techniques, such as averaging and filtering, and advanced deep learning models to identify and subtract reflection components from images.
 
 The final product will (hopefully) be a website where users can upload photos with unwanted reflections (e.g., through windows), and the system will process and return the cleaned images.
 
