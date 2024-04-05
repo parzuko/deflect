@@ -1,5 +1,16 @@
 ## **Deflect: Automatic Reflection Removal in Images**
 
+## Update Log:
+
+### Apil 6
+
+After reading and analyzing, will be going ahead with implementing [this](https://arxiv.org/pdf/1903.03889.pdf) algorithm.
+
+
+### April 4
+Implemented [ICA](ICA.py) and [Averging](averaging.py) to test some algorithms for reflection removal
+
+
 > This is the final project proposal for CS2364 - Computational Photography and Graphics (Spring 2024)
 
 ## Summary:
