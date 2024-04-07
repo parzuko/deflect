@@ -2,6 +2,48 @@
 
 ## Update Log:
 
+### April 7 + 8
+
+Developed pseudocode level understanding of the algorithm + what should be the plan of action for the project
+
+#### How and Why It Works:
+- Frequency Domain Processing
+    -  By transforming the image into the frequency domain using DCT, the algorithm can more easily separate components based on their frequency characteristics, i.e., reflections might have different frequency properties compared to the main image content.
+- Convex Optimization
+    - The algorithm leverages optimization techniques to differentiate between the actual image and the reflection. This is based on the assumption that reflections can be modeled differently from the main content in the frequency domain.
+- Gradient and Laplacian
+    - These operations help in identifying edges and textures, aiding in the separation process by highlighting areas of the image affected by reflections.
+- Normalization and Scaling
+    - Ensures that the output image maintains a visual consistency with the original in terms of brightness and contrast.
+
+```python 
+
+class FastReflectionRemoval:
+    Initialize with parameters like h, lambda, mu
+    
+    function remove_reflection(image):
+        # Step 1: Preprocessing
+        Convert image to frequency domain using DCT
+        
+        # Step 2: Reflection Removal Core
+        For each frequency component:
+            Apply convex optimization to separate reflection from actual image content
+            This might involve using the gradient and Laplacian operations to distinguish features
+        
+        # Step 3: Reconstruction
+        Convert the processed frequency domain back to spatial domain using Inverse DCT
+        
+        # Step 4: Postprocessing
+        Normalize and scale the image back to its original range
+        
+        return the reflection-free image
+
+# Utility Functions (e.g., for file handling and image normalization)
+class FileWriter:
+    functions for saving images, handling directories, etc.
+
+```
+
 ### Apil 6
 
 After reading and analyzing, will be going ahead with implementing [this](https://arxiv.org/pdf/1903.03889.pdf) algorithm.
