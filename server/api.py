@@ -2,7 +2,7 @@ from io import BytesIO
 
 import matplotlib.pyplot as plt
 import base64
-
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from reflection_remover import ReflectionSuppressor
@@ -52,4 +52,5 @@ def process_image():
 
 
 if __name__ == "__main__":
-    app.run()
+    PORT = os.environ.get('PORT', 4000)
+    app.run(port=PORT)
