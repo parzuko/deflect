@@ -2,6 +2,10 @@
 
 ## Update Log:
 
+### May
+Algo implementation + API is ready
+Proceeding to frontend now 
+
 ### April 7 + 8
 
 Developed pseudocode level understanding of the algorithm + what should be the plan of action for the project

@@ -19,8 +19,8 @@ def index():
 def process_image():
     if "file" not in request.files:
         return "No file part in the request", 400
+    
     file = request.files["file"]
-
     if file.filename == "":
         return "No file selected for uploading", 400
 

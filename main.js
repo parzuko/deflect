@@ -21,17 +21,11 @@ document.getElementById("uploadForm").addEventListener("submit", function (event
       return response.blob(); // Assuming server returns a file
     })
     .then((blob) => {
-      // Create a Blob URL from the returned blob
-      const url = URL.createObjectURL(blob);
+      // Create a URL for the blob object
+      const imageUrl = URL.createObjectURL(blob);
 
-      // Optionally download the image or display it
-      const downloadLink = document.createElement("a");
-      downloadLink.href = url;
-      downloadLink.download = "processed_image.png";
-      downloadLink.click();
-
-      // Revoke the Blob URL to free up resources
-      URL.revokeObjectURL(url);
+      // Display the image
+      document.getElementById("resultImage").src = imageUrl;
     })
     .catch((error) => console.error("Error fetching data:", error));
 });
