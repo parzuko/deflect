@@ -70,3 +70,15 @@ def compute_laplacian(array, h = None):
 
     laplacian = compute_divergence(grads)
     return laplacian
+
+def double_dct(array):
+    """
+    The Discrete Cosine Transform (DCT) is used in image compression and is the basis for the JPEG image format.
+    """
+    return dct(dct(array.T, norm='ortho').T, norm='ortho')
+
+def double_idct(array):
+    """
+    The Inverse Discrete Cosine Transform (IDCT) is used to reconstruct an image from its DCT coefficients.
+    """
+    return idct(idct(array.T, norm='ortho').T, norm='ortho')
