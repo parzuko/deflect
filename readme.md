@@ -1,5 +1,20 @@
 ## **Deflect: Automatic Reflection Removal in Images**
 
+> Checkout the PPT `./ReflectionRemover.pdf`
+
+## 💻 Get Started Locally
+
+``` bash
+cd server
+pip install -r requirements.txt
+python api.py # starts at port 8000
+
+cd ../client
+npm i 
+npm run dev # starts at port 3000
+```
+
+
 ## Update Log:
 
 ### May

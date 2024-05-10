@@ -52,5 +52,5 @@ def process_image():
 
 
 if __name__ == "__main__":
-    PORT = os.environ.get('PORT', 4000)
+    PORT = os.environ.get('PORT', 8000)
     app.run(port=PORT)
